@@ -24,14 +24,6 @@ class AnsibleModuleImporter(object):
         if not any([p in given_path for p in _VALID_PATHS]):
             raise ImportError()
 
-        # Make sure that what we act on is really inside on an ansible project.
-        contents = os.listdir(given_path)
-        ansible_dirs = set(ANSIBLE_DIRS).intersection(contents)
-        plugin_dirs = set(PLUGINS).intersection(contents)
-
-        if not ansible_dirs and not plugin_dirs:
-            raise ImportError()
-
         self._path = given_path
 
     def find_module(self, fullname, path=None):
