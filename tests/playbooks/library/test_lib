@@ -1,0 +1,5 @@
+def target():
+    return "test_lib/target imported"
+
+if __name__ == "__main__":
+    target()
