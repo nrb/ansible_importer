@@ -7,7 +7,7 @@ as Python code. This package is meant to allow programmers to import module code
 Usage
 -----
 
-..code-block:: python
+.. code-block:: python
     import ansible_importer
     ansible_importer.install('/abs/path/to/ansible/code')
 
