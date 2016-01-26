@@ -4,6 +4,15 @@ ansible_importer
 Ansible modules and plugins are typically pure Python, but often lack the structure necessary to import 
 as Python code. This package is meant to allow programmers to import module code for testing purposes.
 
+Installing
+----------
+
+The code's up on PyPI
+
+.. code-block:: bash
+
+    pip install ansible_importer
+
 Usage
 -----
 
