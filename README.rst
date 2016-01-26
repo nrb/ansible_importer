@@ -1,11 +1,13 @@
-# ansible_importer
+ansible_importer
+----------------
 
 Ansible modules and plugins are typically pure Python, but often lack the structure necessary to import 
 as Python code. This package is meant to allow programmers to import module code for testing purposes.
 
-# Usage
+Usage
+-----
 
-```
+..code-block:: python
     import ansible_importer
     ansible_importer.install('/abs/path/to/ansible/code')
 
@@ -17,5 +19,3 @@ as Python code. This package is meant to allow programmers to import module code
 
     # Assuming playbooks/inventory/dynamic_inventory.py
     from playbooks.inventory import dynamic_inventory
-```
-
