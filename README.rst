@@ -8,6 +8,7 @@ Usage
 -----
 
 .. code-block:: python
+
     import ansible_importer
     ansible_importer.install('/abs/path/to/ansible/code')
 
