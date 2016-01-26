@@ -101,3 +101,22 @@ def install(root_path):
     sys.path_hooks.append(AnsibleModuleImporter)
     sys.path.append(root_path)
     _VALID_PATHS.append(root_path)
+
+def uninstall(root_path):
+    """
+    Remove importer from hooks and remove specified paths
+    """
+    try:
+        _VALID_PATHS.remove(root_path)
+    except ValueError:
+        pass
+
+    try:
+        sys.path.remove(root_path)
+    except ValueError:
+        pass
+
+    try:
+        sys.path_hooks.remove(AnsibleModuleImporter)
+    except ValueError:
+        pass
