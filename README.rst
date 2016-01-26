@@ -33,7 +33,7 @@ Usage
 Credits
 -------
 
-Thanks to Raphael Randschau for the idea of using the `imp module`, and Doug Hellman's Python Module of the Week post on `import hooks` for guidance in implementation.
+Thanks to Raphael Randschau for the idea of using the `imp module`_, and Doug Hellman's Python Module of the Week post on `import hooks`_ for guidance in implementation.
 
 
 .. _`imp module`: https://nicolai86.eu/blog/posts/2014-02-05/testing-ansible-libraries/
